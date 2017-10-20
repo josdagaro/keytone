@@ -1,36 +1,38 @@
 {
-  "name": "KeyTone",
-  "version": "0.1.0",
-  "description": "A web based interface for viewing profile data collected by XHProf with AngularJS (1.5) & your own Google Firebase",
-  "main": "synchronizer.js",
-  "scripts": {
-    "start": "node synchronizer.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "José David Garcí­a Rodrí­guez",
-  "license": "MIT",
-  "dependencies": {
-    "body-parser": "1.18.2",
-    "express": "4.16.2",
-    "firebase-admin": "5.4.2",
-    "moment": "2.19.1",
-    "mongodb": "2.2.31",
-    "shelljs": "0.7.8"
+    "name": "KeyTone",
+    "version": "0.1.0",
+    "repository": {
+        "type" : "git",
+        "url" : "https://github.com/josdagaro/keytone.git"
+    },
+    "description": "A web based interface for viewing profile data collected by XHProf with AngularJS (1.5) & your own Google Firebase",
+    "main": "synchronizer.js",
+    "scripts": {
+        "start": "node synchronizer.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "José David Garcí­a Rodrí­guez",
+    "license": "MIT",
+    "dependencies": {
+        "body-parser": "1.18.2",
+        "express": "4.16.2",
+        "firebase-admin": "5.4.2",
+        "moment": "2.19.1",
+        "mongodb": "2.2.31",
+        "shelljs": "0.7.8"
     },
     "devDependencies": {
-      "axios": "^0.16.2",
-      "bootstrap-sass": "^3.3.7",
-      "cross-env": "^5.0.1",
-      "jquery": "^3.1.1",
-      "laravel-mix": "^1.0",
-      "lodash": "^4.17.4",
-      "vue": "^2.1.10",
-      "babel-preset-es2015": "^6.24.1",
-      "concurrently": "^2.2.0",
-      "gulp": "^3.9.0",
-      "gulp-babel": "^6.1.2",
-      "gulp-pug": "^3.0.4",
-      "gulp-rename": "1.2.2",
-      "typings": "^1.3.2"
+        "axios": "0.16.2",
+        "bootstrap-sass": "3.3.7",
+        "cross-env": "5.0.1",
+        "jquery": "3.1.1",
+        "lodash": "4.17.4",
+        "babel-preset-es2015": "6.24.1",
+        "concurrently": "2.2.0",
+        "gulp": "3.9.1",
+        "gulp-babel": "6.1.2",
+        "gulp-pug": "3.0.4",
+        "gulp-rename": "1.2.2",
+        "typings": "1.3.2"
     }
 }

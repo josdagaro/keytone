@@ -1,5 +1,5 @@
-import '../global';
-import '../main';
+import '../global/index';
+import '../main/index';
 /*import '../root/index';
 import '../users/index';
 import '../drivers/index';

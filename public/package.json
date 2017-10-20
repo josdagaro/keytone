@@ -1,7 +1,7 @@
 {
-  "name": "handy-publico",
-  "version": "0.1.0",
-  "author": "JosÃ© David GarcÃ­a RodrÃ­guez",
+  "name": "compiled-js",
+  "version": "1.0.0",
+  "author": "José David García Rodrí­guez",
   "dependencies": {
     "angular": "<2",
     "angular-ui-router": "^1.0.0-beta.2",
