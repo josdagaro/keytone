@@ -8,20 +8,20 @@ import {
 } from '../bootstrap/ngModule';
 
 import {
-    ConfigurationService
-} from './configuration.service';
+    ConfigService
+} from './config.service';
 
 import './redirectHookRunBlock';
 import './service';
 
-let configurationService = new ConfigurationService();
-configurationService.development = config.development;
-configurationService.save();
+let configService = new ConfigService();
+configService.unknown = config.unknown;
+configService.save();
 
 const globalModule = {
     components: {},
     services: {
-        ConfigurationService
+        ConfigService
     },
     runBlocks: []
 };
