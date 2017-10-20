@@ -1,15 +1,13 @@
-nav.navbar.navbar-inverse
+nav.navbar.navbar-inverse(style="-webkit-border-radius: 0px; -moz-border-radius: 0px; border-radius: 0px;")
     .container-fluid
         .navbar-header
-            a.navbar-brand(href="#") WebSiteName
+            a.navbar-brand(href="#") KeyTone
         ul.nav.navbar-nav
-            li.active
-                a(href="#") Home
-            li
-                a(href="#") Page 1
-            li
-                a(href="#") Page 2
-            li
-                a(href="#") Page 3
+            li(ng-class="{ active: $ctrl.isActive('requests') }")
+                a(href="/") Solicitudes
+            li(ng-class="{ active: $ctrl.isActive('functions') }")
+                a(href="/#!/functions") Seguimiento de funciones
+            li(ng-class="{ active: $ctrl.isActive('waterfall') }")
+                a(href="/#!/waterfall") Cascada
 .content.col-xs-12.row(ui-view="")
     block page

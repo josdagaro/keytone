@@ -1,18 +1,13 @@
 class DashboardController {
-    constructor(ConfigurationService, $state) {
-        this.development = ConfigurationService.load().development;
+    constructor(ConfigService, $state) {
+        this.unknown = ConfigService.load().unknown;
         this.$state = $state;
-        this.menuIsActive = false;
     }
 
     $onInit() {}
 
-    activeMenu() {
-        this.menuIsActive = !this.menuIsActive;
-    }
-
-    changeMenuState(state) {
-        this.menuIsActive = state;
+    isActive(path) {
+        return this.$state.current.name === path;
     }
 }
 

@@ -1,24 +1,12 @@
 export const dashboardState = {
     name: 'dashboard',
-    redirectTo: 'home',
+    redirectTo: 'requests',
     component: 'dashboardComponent'
 };
 
-export const homeState = {
+export const requestsState = {
     parent: 'dashboard',
-    name: 'home',
+    name: 'requests',
     url: '/',
-    component: 'homeComponent'
+    component: 'requestsComponent'
 };
-
-function returnTo($transition$) {
-    if ($transition$.redirectedFrom() !== null)
-        return $transition$.redirectedFrom().targetState();
-
-    let $state = $transition$.router.stateService;
-
-    if ($transition$.from().name != '')
-        return $state.target($transition$.from(), $transition$.params('from'));
-
-    return $state.target('home');
-}

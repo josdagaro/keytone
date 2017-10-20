@@ -8,12 +8,12 @@ import {
 } from './dashboard.component';
 
 import {
-    homeComponent
-} from './home.component';
+    requestsComponent
+} from './requests.component';
 
 import {
     dashboardState,
-    homeState
+    requestsState
 } from './dashboard.state';
 
 import {
@@ -25,9 +25,9 @@ import {
 const mainModule = {
     components: {
         dashboardComponent,
-        homeComponent
+        requestsComponent
     },
-    states: [dashboardState, homeState],
+    states: [dashboardState, requestsState],
     configBlocks: [defaultConfigurationBlock, locationConfigurationBlock],
     runBlocks: [trackingRunBlock]
 };
