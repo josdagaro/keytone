@@ -1,2 +1,5 @@
 nbproject/
 node_modules/
+firebase/config.js
+firebase/key.json
+mongo/config.js
