@@ -3,3 +3,6 @@ node_modules/
 firebase/config.js
 firebase/key.json
 mongo/config.js
+public/node_modules
+public/transpiled
+npm-debug.log
