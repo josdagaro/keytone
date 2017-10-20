@@ -5,4 +5,5 @@ firebase/key.json
 mongo/config.js
 public/node_modules
 public/transpiled
+public/views
 npm-debug.log

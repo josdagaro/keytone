@@ -1,3 +1,12 @@
 block page
     .container
         h1 Solicitudes
+        table(ng-table="$ctrl.tableParams", show-filter="true").table.table-condensed.table-striped
+            tr(ng-repeat="item in $data")
+                td(data-title="'Method'" filter="{ method: 'text' }", sortable="'method'") {{ item.method }}
+                td(data-title="'URL'" filter="{ URL: 'text' }", sortable="'URL'") {{ item.URL }}
+                td(data-title="'Time'" filter="{ a: 'text' }", sortable="'a'") {{ item.a }}
+                td(data-title="'WT'" filter="{ a: 'text' }", sortable="'a'") {{ item.a }}
+                td(data-title="'CPU'" filter="{ a: 'text' }", sortable="'a'") {{ item.a }}
+                td(data-title="'MU'" filter="{ a: 'text' }", sortable="'a'") {{ item.a }}
+                td(data-title="'PMU'" filter="{ a: 'text' }", sortable="'a'") {{ item.a }}

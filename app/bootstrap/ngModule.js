@@ -2,8 +2,10 @@ import * as angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import 'angular-animate';
 import 'angular-hammer';
+import 'node_modules/ng-table/bundles/ng-table.min';
+import 'node_modules/angular-ui-bootstrap/dist/ui-bootstrap';
 
-export const ngModule = angular.module('keytone', [uiRouter, 'ngAnimate', 'hmTouchEvents']);
+export const ngModule = angular.module('keytone', [uiRouter, 'ngAnimate', 'hmTouchEvents', 'ngTable', 'ui.bootstrap']);
 
 const BLANK_MODULE = {
     states: [],
